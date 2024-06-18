@@ -33,6 +33,7 @@ body>* {
 .social-signup {
     background-image: url('img/background.png');
     background-size: cover;
+    background-position: right top;
     display: flex;
 
     box-shadow: 5px 0px 10px #78bde8;
