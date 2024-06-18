@@ -88,7 +88,8 @@ body>* {
     gap: 3rem;
 
     margin: auto;
-    max-width: 400px;
+    padding: 20%;
+    /* max-width: 400px; */
 }
 
 
@@ -141,6 +142,10 @@ body>* {
     box-shadow: 2px 2px 3px grey;
 }
 
+.form-inputs>label>.input:focus {
+    outline: 0px;
+}
+
 .form-inputs>label:nth-child(3) {
     flex-direction: row;
 
@@ -170,12 +175,59 @@ body>* {
 .boxes {
     width: 150px;
     position: absolute;
+    z-index: -1;
 }
-.box1{
-top: 2px;
-right: 2px;
+
+.box1 {
+    top: 2px;
+    right: 2px;
 }
-.box2{
+
+.box2 {
     bottom: 2px;
     left: 2px;
+}
+
+/* ////////////////////////////////////////////// */
+
+@media screen and (max-width:720px) {
+    /* div {
+        border: 2px solid red;
+    } */
+
+    body {
+        background-image: url('./img/background-mob.png');
+        /* background-size: cover; */
+        flex-direction: column-reverse;
+    }
+
+    .social-signup,
+    .normal-signup {
+        width: 100%;
+        height: auto;
+    }
+
+    .social-signup {
+        background-image: none;
+        box-shadow: none;
+    }
+
+    .form-heading>.heading,
+    .form-heading>.desc,
+    .form-inputs>label {
+        color: white;
+    }
+
+    .form-container {
+        padding-bottom: 1rem;
+    }
+
+    .title {
+        top: 0px;
+    }
+
+    .boxes {
+        display: none;
+    }
+
 }
